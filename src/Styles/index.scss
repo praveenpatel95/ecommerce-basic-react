@@ -1,0 +1,108 @@
+$white:#fff;
+$themeBg:#8080801c;
+$themeColor:#45360c9e;
+$themeLightColor:#977412;
+$grey:#ccc;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $themeBg;
+  font-family: sans-serif;
+
+  .mt-2 {
+    margin-top: 2rem;
+  }
+}
+
+.main {
+  background: $grey;
+  margin: 2rem;
+  .h1{
+    border-bottom: 2px solid $themeLightColor;
+    padding-bottom: 5px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gap-1 {
+    gap: 1rem;
+  }
+
+  .col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .w-100{
+    width: 100%;
+  }
+  .form-input{
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .card {
+    background: $white;
+
+    .card-body {
+      border-radius: 5px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      padding: 20px;
+    }
+  }
+  .category-title{
+    color: $themeColor;
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.ps-1{
+  padding-left: 1rem;
+}
+.bg-white{
+  background: #fff;
+}
+.product-card {
+  line-height: 24px;
+  margin-bottom: 1rem;
+}
+.add_to_cart_btn {
+  background: $themeLightColor;
+  color: $white;
+  padding: 8px 20px;
+  border-radius: 2px;
+  border: 1px solid grey;
+  cursor: pointer;
+
+  &:hover {
+    background: $themeColor !important;
+  }
+}
+.bg-white{
+
+}
+.text-danger{
+  color: darkred;
+}
+.checkout-table{
+  width: 100%;
+  border: $grey;
+  border-collapse: collapse;
+  td, th{
+    padding: 5px 10px;
+    text-align: left;
+  }
+}
