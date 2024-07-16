@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {useSelector} from "react-redux";
 import CartItems from "./CartItems";
 import CheckoutForm from "./CheckoutForm";
@@ -7,7 +7,7 @@ function Checkout() {
     const {cartItems, orderDetail} = useSelector(state => state?.CartReducer)
 
     const isOrderPlaced = (orderDetail) => {
-        return Object.keys(orderDetail).length != 0;
+        return Object.keys(orderDetail).length !== 0;
     };
 
 

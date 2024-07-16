@@ -5,7 +5,7 @@ This if for ecommerce basic app for learn react
 - Minimum Npm version : 9.5.1
 - Minimum Node version : 18.16.0
 
-## Installation
+## Setup
 
 Clone the repository:
 
